@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=46f15a41e5a098a4a552dffaa9f7b5d25ee91bb909d2bcaffeb8b8b51158de32
+    - CC_TEST_REPORTER_ID=${CODE_CLIMATE_REPORTER_ID}
     - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
 
 language: go
