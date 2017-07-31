@@ -16,7 +16,6 @@ before_install:
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
-  - mv ${GOPATH}/src/github.com/JormungandrK/user-microservice ${GOPATH}/src/user-microservice
 
 script:
   - gocov test github.com/natemago/test-repo | gocov-xml > coverage.xml
